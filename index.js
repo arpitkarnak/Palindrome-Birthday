@@ -3,7 +3,7 @@ function reverseStr(str){
     var reverseListOfChars = listOfChars.reverse()
     var reversedStr = reverseListOfChars.join('')
     return reversedStr;
-  }
+}
 
 
   //Palindrome reverse
@@ -163,7 +163,7 @@ function reverseStr(str){
   function getNextPalindromeDate(date){
     var ctr = 0;
     var nextDate = getNextDate(date);
-    
+
   
     while(1){
       ctr++;
@@ -175,6 +175,46 @@ function reverseStr(str){
     }
     return [ctr, nextDate];
   }
+
+
+var userInput = document.querySelector('#user-input');
+var outputBtn = document.querySelector('#output-btn');
+var output1 = document.querySelector('#output')
+
+
+function clickHandler(e){
+    var bdayStr = userInput.value;
+    if(bdayStr ==''){
+        output1.innerText ='You need to select your Date Of Birth'
+    }
+    
+    if(bdayStr !== ''){
+      var listOfDate = bdayStr.split('-'); 
+      var date = {
+        day: Number(listOfDate[2]),
+        month: Number(listOfDate[1]),
+        year: Number(listOfDate[0])
+      };
+
+      
+      var isPalindrome = checkPalindromeForAllDateFormats(date);
+  
+      if(isPalindrome){
+         resultRef.innerText = 'hello'
+      }
+      else {
+        var [ctr, nextDate] = getNextPalindromeDate(date);
+  
+        output1.innerText = `The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${ctr} day`;
+      }
+    }
+  }
+
+outputBtn.addEventListener('click',clickHandler)
+  
+
+// output1.innerText = 'Oh No! The Next  Palendindrome Date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, You missed it by only ${ctr} days';
+// output1.innerText = 'Oh No! The Next  Palendindrome Date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, You missed it by only ${ctr} days';
 
 
 
