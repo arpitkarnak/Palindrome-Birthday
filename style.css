@@ -1,0 +1,33 @@
+* {
+  background-color: rgb(142, 243, 209);
+  font-family: cursive;
+}
+
+.heading {
+  font-weight: 800;
+  color: rgb(14, 143, 143);
+  padding-left: 30%;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  background-color: chartreuse;
+}
+
+#user-input {
+  font-size: 25px;
+  margin-top: 5.2rem;
+  margin-left: 35%;
+}
+
+#output-btn {
+  font-size: larger;
+  margin-top: 3rem;
+  margin-left: 40%;
+  background-color: darkslategray;
+}
+
+#output {
+  font-size: xx-large;
+  margin-top: 4em;
+  padding-left: 5em;
+  background-color: chartreuse;
+}
