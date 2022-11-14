@@ -199,8 +199,8 @@ function clickHandler(e){
       
       var isPalindrome = checkPalindromeForAllDateFormats(date);
   
-      if(isPalindrome){
-         resultRef.innerText = 'hello'
+      if(isPalindrome ){
+         output1.innerText = "Congrats! Your birthday is a palindrome"
       }
       else {
         var [ctr, nextDate] = getNextPalindromeDate(date);
