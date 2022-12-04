@@ -1,5 +1,7 @@
 * {
-  background-color: rgb(93, 219, 177);
+  background-color: rgb(40, 73, 63);
+
+  background-blend-mode: lighten;
   font-family: cursive;
 }
 
@@ -7,35 +9,49 @@
   font-weight: 800;
   font-size: 43px;
   color: rgb(14, 143, 143);
-  padding-left: 30%;
+  padding-left: 15%;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-  background-color: rgb(197, 218, 221);
+  background-color: rgb(2, 21, 24);
+  border-radius: 3em;
+  margin-left: 5rem;
+  margin-right: 6rem;
+  border: 3px solid blue;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
 }
 
 #user-input {
   font-size: 25px;
+  padding: 0.8rem;
   margin-top: 5.2rem;
   margin-left: 35%;
-  background-color: rgb(128, 128, 128);
+  background-color: rgb(50, 141, 148);
+  border: 2px solid black;
 }
 
 #output-btn {
   font-size: larger;
   margin-top: 3rem;
-  margin-left: 38%;
+  margin-left: 42%;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
-  background-color: rgb(48, 107, 107);
+  background-color: rgb(14, 70, 70);
+  border: 2px solid black;
+  border-radius: 1rem;
 }
 
 #output {
   font-size: xx-large;
-  margin-top: 4em;
+  margin-top: 2em;
   padding-left: 5em;
-  background-color: chartreuse;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  background-color: rgb(14, 17, 29);
+  padding-top: 4rem;
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  color: yellowgreen;
+  padding-bottom: 3em;
+  border: 3px solid rgb(8, 8, 255);
 }
